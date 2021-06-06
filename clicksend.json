@@ -1,0 +1,346 @@
+{
+   "name": "clicksend",
+   "author": "z1p",
+   "version": 0.1,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "clicksendSMS": {
+         "display_name": "clicksendSMS",
+         "className": "_clicksendSMS",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "to",
+               "schema_value": "to",
+               "type": "input",
+               "label": "to",
+               "description": ""
+            },
+            {
+               "schema_item": "body",
+               "schema_value": "body",
+               "type": "input",
+               "label": "body",
+               "description": ""
+            },
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "to",
+               "schema_value": "to",
+               "type": "input",
+               "label": "to",
+               "description": ""
+            },
+            {
+               "schema_item": "body",
+               "schema_value": "body",
+               "type": "input",
+               "label": "body",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "clicksendPullUnreadSMS": {
+         "display_name": "clicksendPullUnreadSMS",
+         "className": "_clicksendPullUnreadSMS",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "clicksendGetAccountUsage": {
+         "display_name": "clicksendGetAccountUsage",
+         "className": "_clicksendGetAccountUsage",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "year",
+               "schema_value": "year",
+               "type": "input",
+               "label": "year",
+               "description": ""
+            },
+            {
+               "schema_item": "month",
+               "schema_value": "month",
+               "type": "input",
+               "label": "month",
+               "description": ""
+            },
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "year",
+               "schema_value": "year",
+               "type": "input",
+               "label": "year",
+               "description": ""
+            },
+            {
+               "schema_item": "month",
+               "schema_value": "month",
+               "type": "input",
+               "label": "month",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "clicksendGetAccountInfo": {
+         "display_name": "clicksendGetAccountInfo",
+         "className": "_clicksendGetAccountInfo",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
